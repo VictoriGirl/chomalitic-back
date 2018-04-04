@@ -11,6 +11,9 @@ gem 'rails', '~> 5.1.6'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
 
+gem 'devise'
+gem 'simple_token_authentication', '~> 1.0'
+
 gem 'rubocop', require: false
 
 group :development, :test do

@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: chromalitic
+  password: password
+  template: template0
+
+development:
+  <<: *default
+  database: chromalitic_development
+
+test:
+  <<: *default
+  database: chromalitic_test
+
+production:
+  <<: *default
+  database: chromalitic_production
